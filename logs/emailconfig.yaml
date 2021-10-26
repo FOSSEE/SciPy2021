@@ -1,0 +1,20 @@
+version: 1
+disable_existing_loggers: False
+
+formatters:
+  detailed:
+    format: '%(asctime)s - %(levelname)s - Function: %(funcName)s() - Line: %(lineno)d -  %(message)s'
+
+handlers:
+    emaillogfile:
+      level: INFO
+      class: logging.handlers.RotatingFileHandler
+      maxBytes: 10000000 #10MB
+      backupCount: 9
+      formatter: detailed
+      filename: /home/prashant/django_project/fossee_project/python3.x/scipy2018/SciPy2018/logs/emailfile.log
+
+root:
+  level: INFO
+  handlers:
+    - emaillogfile

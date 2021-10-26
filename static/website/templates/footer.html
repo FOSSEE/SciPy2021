@@ -1,0 +1,61 @@
+
+{% load static %}
+<!-- Footer -->
+{% block footer %}
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <ul class="social-block">
+                        <li><a href="https://twitter.com/scipyindia" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://www.facebook.com/SciPyIndia" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/fossee_nmeict/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-7">
+                    <ul class="social-block">
+                        Visit SciPy.in/
+                        <a style="color:#ff7f2a;" target="_blank" href="https://scipy.in/2009">2009</a>/
+                        <a style="color:white;" target="_blank" href="https://scipy.in/scipyin/2010/">2010</a>/
+                        <a style="color:#ff7f2a;" target="_blank" href="https://scipy.in/scipyin/2011/">2011</a>/
+                        <a style="color:white;" target="_blank" href="https://scipy.in/2012">2012</a>/
+                        <a style="color:#ff7f2a;" target="_blank" href="https://scipy.in/2013">2013</a>/
+                        <a style="color:white;" target="_blank" href="https://scipy.in/2014">2014</a>/
+                        <a style="color:#ff7f2a;" target="_blank" href="https://scipy.in/2015">2015</a>/
+                        <a style="color:white;" target="_blank" href="https://scipy.in/2016">2016</a>/
+                        <a style="color:#ff7f2a;" target="_blank" href="https://scipy.in/2017">2017</a>/
+                        <a style="color:white;" target="_blank" href="https://scipy.in/2018">2018</a>/
+                        <a style="color:#ff7f2a;" target="_blank" href="https://scipy.in/2019">2019</a>/
+                        <a style="color:white;" target="_blank" href="https://scipy.in/2020">2020</a>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <center style="color:white;font-size: 10px;">
+                        This work is licensed under a <a target="_blank" href="http://creativecommons.org/licenses/by-sa/4.0/" style="color:#ff7f2a;">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+                    </center>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- script -->
+    <script src="{% static 'website/bootstrap-css/bower_components/jquery/dist/jquery.min.js' %}"></script>
+    <script src="{% static 'website/bootstrap-css/bower_components/bootstrap/dist/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'website/bootstrap-css/bower_components/smooth-scroll/dist/js/smooth-scroll.min.js' %}"></script>
+    <script src="{% static 'website/bootstrap-css/assets/js/main.js' %}"></script>
+    <script src="{% static 'website/js/custom.js' %}"></script>
+    <script src="{% static 'website/js/team-profile.js' %}"></script>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-26098261-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+{% endblock %}
