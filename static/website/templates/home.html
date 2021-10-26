@@ -1,0 +1,356 @@
+{% load static %}
+<!-- Navigation -->
+{% block home %} 
+<div id="home" data="home"></div>
+    <header id="site-header" class="site-header valign-center"> 
+        <div class="intro">
+        <p>International conference on Python for education and scientific computing</p>
+        <img alt="" class="img-responsive center-block img-logo" src="{% static 'website/bootstrap-css/assets/images/backgrounds/SciPy_logo.png' %}"><br>
+        <center>
+        <div style="background-color: rgb(0, 68, 170, 0.4); border-radius: 10px; padding: 10px; width: 75%">
+         <h1>SciPy India 2021</h1>
+            <h2>17 &amp; 18 December, 2021</h2>
+            </div>
+            </center>
+            <br>
+            <!-- <center>
+           <div style="background-color: rgb(0,0,0, 0.6); border-radius: 10px; padding: 10px; width: 75%"> <h5 style="color: #ffd21e"><strong>We have sent out invites to all the registered participants. Please check your inbox and spam folder with the subject line "Invitation to online event". In case you have not yet registered with us, please go to the registration link below and get a ticket for the Conference tomorrow.</strong></h5></div></center><br> -->
+            <!-- <a href="#registration" data-scroll class="btn btn-white">Register now</a> -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#registermdl">
+  Register
+</button>
+
+        </div>
+        
+    </header>
+
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+
+                    <h3 class="section-title">About Us</h3>
+
+                    <p class="text-justify">SciPy India is the annual gathering of Pythonistas providing opportunities to spread the use of the Python programming language in the Scientific Computing community in India.</p>
+                    <p class="text-justify"> 
+
+It provides a unique opportunity to discuss about the latest trends on Scientific Computing in the industry. You can present your ideas, research work done in this area during the conference.  One of the goals of the conference is to combine education, engineering, and science with computing through the medium of Python.</p>
+
+                </div><!-- /.col-sm-6 -->
+                <div class="col-sm-6">
+                     <h3 class="section-title multiple-title" align="center">News and Updates</h3>
+                    <a class="twitter-timeline" data-width="500" data-height="380" href="https://twitter.com/SciPyIndia?ref_src=twsrc%5Etfw">Tweets by SciPyIndia</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+
+                </div><!-- /.col-sm-6 -->
+            </div><!-- /.row -->
+        </div><!-- /.container -->
+    </section>
+
+    <section id="facts" class="section bg-image-1 facts text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+
+                    <i class="ion-ios-calendar"></i>
+                    <h3>2021<br>December 17 &amp; 18</h3>
+                
+                </div>
+                <div class="col-sm-4">
+
+                    <i class="ion-ios-location"></i>
+                    <h3>Online</h3>
+
+                </div>
+                <!-- <div class="col-sm-3">
+
+                    <i class="ion-pricetags"></i>
+                    <h3>Over 300<br>Tickets</h3>
+                
+                </div> -->
+                <div class="col-sm-4">
+                
+                    <i class="ion-speakerphone"></i>
+                    <h3>Speakers on the way</h3>
+
+                </div>
+            </div><!-- row -->
+        </div><!-- container -->
+    </section>
+
+    <section id="speakers" class="section speakers">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title">Speakers</h3>         
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <h3>TBD</h3>         
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <section id="instructions" class="section instructions">
+      <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title">General Instructions</h3>
+                </div>
+            </div>
+            
+            
+            
+            <div class="row">
+              <div class="col-md-12">
+             <!-- <strong> General Instructions</strong> 
+<ol>
+<li>SciPy India 2021 will be conducted virtually this year. Participants can attend the conference from their respective places.</li>
+<li>The participants have to register to attend the conference.</li>
+<li>Please note all the communication related to the conference will happen on the email id provided by you during registration.</li>
+<li>Certificates will be provided to all the participants who attend the conference.</li>
+</ol>
+              </div>
+            </div>
+      </div>      
+    </section> -->
+    <!--  <section id="registration" class="section registration">
+      <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title">Registration</h3>
+                </div>
+            </div>
+            
+            
+            
+            <div class="row">
+              <div class="col-md-12">
+             
+<!-- <strong>Registration Details</strong> -->
+<!-- <ol>
+<li>The registration amount for the conference is Rs. 115 (inclusive of GST).</li>
+<li>Please note the transaction ID mentioned in the <strong>Payment Information</strong> page for future reference.</li>
+<li>The registration amount is non-refundable and non-transferable.</li>
+<li>While registering for the conference, the participants are requested to upload a scanned copy of any Govt. issued ID proof (e.g. PAN card, AADHAR, Passport, Driving License etc.). If you are a college student, you can upload your college ID card with your photo.</li>
+<li>To register and make the payment for the conference, click on the button given below.</li>
+</ol>
+              <center>
+                <a href ="https://fopays.fossee.in/payments/initialdata/0c7f6031-ad1f-4f9f-8517-c416b5665e01" class="btn btn-white" target ="_blank">Register now</a>
+              </center><br>
+              <span style="color:red"><strong>Note:</strong></span> In case you face any issue or get a failure message while making the payment, please provide the transaction details like date, amount, transaction ID number, to the email id <strong>payments[at]fossee[dot]in</strong>. We will get back to you within 5 working days after verifying the details. Please do not make any more payments until you receive an email response.
+              <br>The last date to register for the conference is 17 December 2021. Please note that the ticket and the details to attend the conference will be sent on your registered email id one day prior to the event.
+              </div>
+            </div>
+      </div>      
+    </section> -->
+     <section id="important_dates" class="section important_dates">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title">Important dates</h3>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <h3>TBD</h3>         
+                </div>
+            </div>
+            <!-- {% if cfp_dates %}
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>Call for Papers open from: {{ cfp_dates.start_date| date:"d F Y" }}</h4>
+                </div>
+                <div class="col-md-6">
+                    <h4>Call for Papers closes on: {{ cfp_dates.end_date| date:"d F Y" }}</h4>
+                </div>
+            </div>
+            {% else %}
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="text-center">Dates will be announced soon.</h3>
+                </div>
+            </div>
+            {% endif %} -->
+        </div>
+    </section>
+
+    <section id="contribution" class="section contribution">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title">Call for Papers</h3>
+                    <p>We invite you to submit proposals for talks or workshops to be presented at SciPy 2021. The time duration for talks is 15 or 30 minutes and for workshops is 2 to 3 hours. There will be two parallel tracks for the workshops this year. One track is meant for beginners and the other is for advanced users. </p>
+                    <center>
+                      <button type="button" class="btn btn-primary text-center" data-toggle="modal" data-target="#announce_cfp"> Submit
+                      </button>
+                    </center>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="coc" class="section cod">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title">Code Of Conduct</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                     <p class="text-justify">We appreciate your participation in SciPy 2021. We want you to have an enjoyable and enriching experience in the conference. For this all the attendees are required to conform to the following Code of Conduct. Organisers will ensure that it is enforced throughout the event.
+                     <div id="demo" class="collapse">
+                        <div class="card-text">
+                           <p>SciPy India is dedicated to providing a harassment-free conference experience for everyone, regardless of age, gender, sexual orientation, physical appearance, disability, race, religion or employment.
+                           </p>
+                           <p>Harassment includes offensive verbal comments related to gender, sexual orientation, disability, physical appearance, body size, race, religion, sexual images in public spaces, deliberate intimidation, stalking, following, harassing photography or recording, sustained disruption of talks or other events, inappropriate physical contact, and unwelcome sexual attention. We have zero tolerance on harassment of conference participants in any form, including, but not limited to the activities mentioned here.
+                           </p>
+                           <p>Participants asked to stop any harassing behavior are expected to comply immediately.
+                           </p>
+                           <p>All communication should be appropriate for a professional audience, including people from many different backgrounds. Sexual language or imagery is inappropriate for all aspects of the conference, including talks. Remember that sexist, racist or any other form of exclusionary or offensive jokes or excessive public swearing are not appropriate at any venue of SciPy India.
+                           </p>
+                           <p>Do not insult or put down attendees or engage in any action that violates the open, welcoming and sharing spirit of the conference. Be kind and sensitive to the people around you when you are attending the conference, and avoid any kind of offensive or degrading behavior.
+                           </p>
+                           <p>
+                              <b>If a participant engages in behavior that violates this code of conduct, the conference organizers may take any action they deem appropriate, including warning the offender or expulsion from the conference with no refund.
+                              </b>
+                           </p>
+                           <p>Thank you for helping to make SciPy India a welcoming, friendly event for all.
+                           </p>
+                           <p>
+                              <b>Contact Information:
+                              </b>
+                           </p>
+                           <p>If you are being harassed, notice that someone else is being harassed, or have any other concerns, please contact the helpdesk channel in the chat.scipy.in app OR send a private message to volunteers with the Organiser tag (beside their IDs) on Hopin.
+                           </p>
+                           <p>Conference staff will be happy to help participants assist those experiencing harassment to feel safe for the duration of the conference. We value your attendance.
+                           </p>
+                           <p>
+                              <b>License:
+                              </b>
+                           </p>
+                           <p>This Code of Conduct was forked from PSF Code of Conduct by Python Software Foundation which is under a Creative Commons Attribution 3.0 Unported License.
+                           </p>
+                           <p>SciPy India Conference Code of Conduct is licensed under a Creative Commons Attribution 3.0 Unported License.
+                           </p>
+                        </div>
+                     </div>
+                     <center>
+                        <button type="button" class="btn btn-black" data-toggle="collapse" data-target="#demo">
+                            <i class="fa fa-arrow-down" aria-hidden="true"></i>
+                            <i class="fa fa-arrow-up" aria-hidden="true"></i>
+                        </button>
+                    </center>
+            </div>
+    </section>
+
+    <!-- <section id="venue" class="section venue">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h3 class="section-title">Venue</h3>
+                </div>
+            </div>
+            <p></p>
+        </div>
+    </section> -->
+    
+    <section id="organiser" class="section organiser">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title">Organiser &amp; Sponsor</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <a href="https://fossee.in"class="organiser-box organiser-box-1" target="_blank"></a>
+                    <p class="text-justify">The Annual SciPy India conference is organised by the team members of FOSSEE project which is part of the National Mission on Education through ICT with the thrust area being Adaptation and deployment of open source simulation packages equivalent to proprietary software, funded by Ministry of Education(MoE), based at the Indian Institute of Technology Bombay. </p>
+                </div>
+            </div>
+    </section>
+<div class="container">
+<div class="col-md-6">
+  <section id="poster" class="section poster">
+        
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title">Poster</h3>
+                </div>
+            </div>
+             <div class="row">
+             <center>
+                <div class="col-md-4">
+                    <a href="{% static 'website/bootstrap-css/assets/pdf/poster.pdf'%}" target="_blank"><img class="img-responsive center-block img-logo" src="{% static 'website/bootstrap-css/assets/images/selected-poster.png' %}"></a>
+                </div>
+              </center>
+            </div>
+    </section> 
+</div>
+<div class="col-md-6">
+  <section id="contact-us" class="section contact-us">
+       
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title">Contact us</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                <p>For any query, reach us at <a style="color:black;" href="mailto:scipy@fossee.in"> scipy[at]fossee[dot]in</p>
+                    <!-- <dl class="alt">
+                            <dt>Phone</dt>
+                            <dd><i class="fa fa-phone" aria-hidden="true"></i> (+91) 22 25764133</dd>
+                            <dd><i class="fa fa-calendar" aria-hidden="true"></i> Monday - Friday</dd>
+                            <dd><i class="fa fa-clock-o" aria-hidden="true"></i> 10:00 AM - 6:00 PM</dd>
+                            <dt>Email</dt>
+                            <dd>
+                                <i class="fa fa-envelope" aria-hidden="true"></i> <a style="color:black;" href="mailto:scipy@fossee.in"> scipy[at]fossee[dot]in
+                                </a>
+                            </dd>
+                        </dl> -->
+                </div>
+              </div>
+    </section>
+</div>
+</div>
+     
+
+    <section id="photos" class="section photos">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title">Memories of <span style="text-transform: none;">SciPy India</span></h3>
+                </div>
+            </div>
+            <div class="row">
+            <center>
+                <div class="col-md-12">
+                    <a data-flickr-embed="true"  href="https://www.flickr.com/photos/138717104@N02/albums/72157710765977263" title="SciPy2021">
+                    <img src="https://live.staticflickr.com/65535/48705266592_0e70bb04a4_z.jpg" width="80%" height="360" alt="SciPy2021"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+                </div>
+            </center>
+            </div>
+        </div>
+    </section>
+
+    
+
+<div class="modal fade" id="announce_cfp" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+          <p class="text-justify">Call for Papers will open soon.</p>
+      </div>
+      <div class="modal-footer">
+          <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
