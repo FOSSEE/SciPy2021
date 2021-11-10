@@ -15,10 +15,10 @@
             <br>
             <!-- <center>
            <div style="background-color: rgb(0,0,0, 0.6); border-radius: 10px; padding: 10px; width: 75%"> <h5 style="color: #ffd21e"><strong>We have sent out invites to all the registered participants. Please check your inbox and spam folder with the subject line "Invitation to online event". In case you have not yet registered with us, please go to the registration link below and get a ticket for the Conference tomorrow.</strong></h5></div></center><br> -->
-            <!-- <a href="#registration" data-scroll class="btn btn-white">Register now</a> -->
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#registermdl">
+            <a href="#registration" data-scroll class="btn btn-primary">Register now</a>
+            <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#registermdl">
   Register
-</button>
+</button> -->
 
         </div>
         
@@ -114,7 +114,7 @@ It provides a unique opportunity to discuss about the latest trends on Scientifi
             </div>
       </div>      
     </section> -->
-    <!--  <section id="registration" class="section registration">
+     <section id="registration" class="section registration">
       <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -127,23 +127,23 @@ It provides a unique opportunity to discuss about the latest trends on Scientifi
             <div class="row">
               <div class="col-md-12">
              
-<!-- <strong>Registration Details</strong> -->
-<!-- <ol>
-<li>The registration amount for the conference is Rs. 115 (inclusive of GST).</li>
+<strong>Registration Details</strong> 
+<ol>
+<li>The registration amount for the conference is Rs. 125 (inclusive of GST).</li>
 <li>Please note the transaction ID mentioned in the <strong>Payment Information</strong> page for future reference.</li>
 <li>The registration amount is non-refundable and non-transferable.</li>
 <li>While registering for the conference, the participants are requested to upload a scanned copy of any Govt. issued ID proof (e.g. PAN card, AADHAR, Passport, Driving License etc.). If you are a college student, you can upload your college ID card with your photo.</li>
 <li>To register and make the payment for the conference, click on the button given below.</li>
 </ol>
               <center>
-                <a href ="https://fopays.fossee.in/payments/initialdata/0c7f6031-ad1f-4f9f-8517-c416b5665e01" class="btn btn-white" target ="_blank">Register now</a>
+                <a href ="https://fopays.fossee.in/payments/initialdata/8839bb0a-55e8-4397-9a37-06dfed7a98b9" class="btn btn-primary" target ="_blank">Register now</a>
               </center><br>
               <span style="color:red"><strong>Note:</strong></span> In case you face any issue or get a failure message while making the payment, please provide the transaction details like date, amount, transaction ID number, to the email id <strong>payments[at]fossee[dot]in</strong>. We will get back to you within 5 working days after verifying the details. Please do not make any more payments until you receive an email response.
-              <br>The last date to register for the conference is 17 December 2021. Please note that the ticket and the details to attend the conference will be sent on your registered email id one day prior to the event.
+              <br>The last date to register for the conference is 14 December 2021. Please note that the ticket and the details to attend the conference will be sent on your registered email id one day prior to the event.
               </div>
             </div>
       </div>      
-    </section> -->
+    </section>
      <section id="important_dates" class="section important_dates">
         <div class="container">
             <div class="row">
@@ -151,12 +151,7 @@ It provides a unique opportunity to discuss about the latest trends on Scientifi
                     <h3 class="section-title">Important dates</h3>
                 </div>
             </div>
-            <div class="row text-center">
-                <div class="col-md-12">
-                    <h3>TBD</h3>         
-                </div>
-            </div>
-            <!-- {% if cfp_dates %}
+            {% if cfp_dates %}
             <div class="row">
                 <div class="col-md-6">
                     <h4>Call for Papers open from: {{ cfp_dates.start_date| date:"d F Y" }}</h4>
@@ -171,7 +166,7 @@ It provides a unique opportunity to discuss about the latest trends on Scientifi
                     <h3 class="text-center">Dates will be announced soon.</h3>
                 </div>
             </div>
-            {% endif %} -->
+            {% endif %}
         </div>
     </section>
 
@@ -182,8 +177,8 @@ It provides a unique opportunity to discuss about the latest trends on Scientifi
                     <h3 class="section-title">Call for Papers</h3>
                     <p>We invite you to submit proposals for talks or workshops to be presented at SciPy 2021. The time duration for talks is 15 or 30 minutes and for workshops is 2 to 3 hours. There will be two parallel tracks for the workshops this year. One track is meant for beginners and the other is for advanced users. </p>
                     <center>
-                      <button type="button" class="btn btn-primary text-center" data-toggle="modal" data-target="#announce_cfp"> Submit
-                      </button>
+                      <a href="{% url 'website:cfp' %}" class="btn btn-primary text-center">
+                    Submit</a>
                     </center>
 
                 </div>
