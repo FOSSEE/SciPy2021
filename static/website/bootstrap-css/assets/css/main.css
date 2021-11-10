@@ -166,11 +166,11 @@ background-color: #ffd21e;
   background-color: #101f3f;
 }
 .btn-info{
-  color: #000;
-  background-color: #ffd21e;
+  color: #101f3f;
+  background-color: #ff7f2a;
 }
 .btn-info:hover {
-    color: #fff;
+    color: #ff7f2a;
     background-color: #101f3f;
 }
 btn-info.active.focus, .btn-info.active:focus, .btn-info.active:hover, .btn-info:active.focus

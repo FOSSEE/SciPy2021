@@ -203,7 +203,7 @@ def submitcfp(request):
                 message = """
                 Dear {0}, <br><br>
                 Thank you for showing interest & submitting a paper proposal at SciPy India 2021 
-                for the paper titled {1}. Reviewal of the proposals will start 
+                for the paper titled {1}. Review of the proposals will start 
                 once the CFP closes.
                 You will be notified regarding comments/selection/rejection of your paper via email. 
                 Visit this {2} link to view the status of your submission.
@@ -228,8 +228,10 @@ def submitcfp(request):
                 return HttpResponse(template.render(context, request))
         else:
             form = ProposalForm()
+            context['proposal_form'] = form
             context['proposals_a'] = proposals_a
-            return render(request, 'submit-cfp.html', {'proposal_form': form})
+        template = loader.get_template('submit-cfp.html')
+        return HttpResponse(template.render(context, request))
     else:
         context['login_required'] = True
         return render_to_response('cfp.html', context)
@@ -263,9 +265,9 @@ def submitcfw(request):
                 to = (social_user.email, TO_EMAIL)
                 message = """
                 Dear {0}, <br><br>
-                Thank you for showing interest & submitting a workshop proposal at SciPy India 2021 conference for the workshop titled <b>“{1}”</b>. Reviewal of the proposals will start once the CFP closes.
+                Thank you for showing interest & submitting a workshop proposal at SciPy India 2021 conference for the workshop titled <b>“{1}”</b>. Review of the proposals will start once the CFP closes.
                 <br><br>You will be notified regarding comments/selection/rejection of your workshop via email.
-                Visit this {2} link to view status of your submission.
+                Visit this {2} link to view the status of your submission.
                 <br>Thank You ! <br><br>Regards,<br>SciPy India 2021,<br>FOSSEE - IIT Bombay.
                 """.format(
                     social_user.first_name,
@@ -604,7 +606,7 @@ def status(request, proposal_id=None):
                     message = """
                     Thank you for showing interest & submitting a workshop proposal at SciPy India 2021 conference for the workshop titled <b>"{1}"</b>. You are requested to submit this talk proposal once        again.<br>
                     You will be notified regarding comments/selection/rejection of your workshop via email.
-                    Visit this {2} link to view comments on your submission.<br><br>
+                    Visit this {2} link to view the comments on your submission.<br><br>
                     Thank You ! <br><br>Regards,<br>SciPy India 2021,<br>FOSSEE - IIT Bombay.
                     """.format(
                         proposal.user.first_name,
@@ -829,7 +831,7 @@ Thank You ! \n\nRegards,\nSciPy India 2021,\nFOSSEE - IIT Bombay.
                         subject = "SciPy India 2021 - Workshop Proposal Resubmission"
                         message = """Dear {0}, \n
 Thank you for showing interest & submitting a workshop proposal at SciPy India 2021 conference for the workshop titled <b>"{1}"</b>. You are requested to submit this talk proposal once again.\n
-You will be notified regarding comments/selection/rejection of your workshop via email. Visit this {2} link to view comments on your submission.\n\n
+You will be notified regarding comments/selection/rejection of your workshop via email. Visit this {2} link to view the comments on your submission.\n\n
 Thank You ! \n\nRegards,\nSciPy India 2021,\nFOSSEE - IIT Bombay.
                         """.format(
                             proposal.user.first_name,
