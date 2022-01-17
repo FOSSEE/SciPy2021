@@ -728,9 +728,11 @@ def status_change(request):
                         message = """Dear {0}, \n
 Thank you for your submission to SciPy India 2021! We are pleased to inform you that your talk titled "{1}" has been accepted!  This year, we have received many really good submissions. Of the talk duration, please plan to keep 5 minutes for Q&A and transfer. We will have the next speaker get ready during your Q&A session in order to not waste time.
 
+The tentative schedule will be put up on the website by the end of the day. Please make a note of the time slot and duration of your talk.
+
 Pardon the unsolicited advice but it is important that you plan your presentations carefully. Keep your talk focussed and please rehearse your talk and slides to make sure it flows well.
 
-Please confirm your participation via return email on or before 18 December 2021(Friday). The tentative schedule will be put up on the website by the end of the day. We look forward to hearing your talk.
+Please confirm your participation via return email on or before 19 January 2022(Wednesday). We look forward to hearing your talk.
 
 Thank You! \n\nRegards,\nSciPy India 2021 Program Chairs,\nFOSSEE - IIT Bombay.
                         """.format(
@@ -742,7 +744,9 @@ Thank You! \n\nRegards,\nSciPy India 2021 Program Chairs,\nFOSSEE - IIT Bombay.
                         message = """Dear {0}, \n
 Thank you for your submission at SciPy India 2021! We are pleased to accept your workshop titled "{1}". Each workshop is allotted a time slot of 2 hours. Please plan for 1 hour and 55 minutes in order to give the participants a 10-minute break between workshops.
 
-The tentative schedule will be put up on the website by the end of the day. Please confirm your participation via return email on or before 18 December 2021(Friday).
+The tentative schedule will be put up on the website by the end of the day. Please make a note of the time slot and duration of your workshop. Please confirm your participation via return email on or before 19 January 2022(Wednesday).
+
+We request you to share a PDF Instruction sheet with the steps/ procedure to install the prerequisite software/ packages for the participants to follow.
 
 We strongly suggest that you try to plan your workshop carefully and focus on exercises, problems, and not do excessive amounts of theory. Also, do not waste too much time on the installation during your workshop. Try to give your participants a decent overview so they can pick up additional details on their own. It helps to pick one or two overarching problems you plan to solve and work your way through the solution of those.
 
