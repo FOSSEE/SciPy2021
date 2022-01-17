@@ -449,13 +449,12 @@ def comment_abstract(request, proposal_id=None):
                     sender_email = TO_EMAIL
                     to = (proposal.user.email, TO_EMAIL)
                     if proposal.proposal_type == 'ABSTRACT':
-                        subject = "SciPy India 2021 - Comment on Your talk Proposal"
+                        subject = "SciPy India 2021 - Comment on your talk Proposal"
                         message = """
-                            Dear {0}, <br><br>
-                            There is a comment posted on your proposal for the talk titled <b>{1}</b>.<br>
-                            Once we receive your response, you will be notified regarding further comments/acceptance/ rejection of your talk/workshop via email. 
-                            Log in to view the comments on your submission.<br><br>
-                            Thank You ! <br><br>Regards,<br>SciPy India 2021,<br>FOSSEE - IIT Bombay.
+Dear {0}, \n\n
+There is a comment posted on your proposal for the talk titled "{1}".\n
+Log in to view the comments on your submission.\n\n
+Thank You ! \n\nRegards,\nSciPy India 2021,\nFOSSEE - IIT Bombay.
                             """.format(
                             proposal.user.first_name,
                             proposal.title,
@@ -463,26 +462,25 @@ def comment_abstract(request, proposal_id=None):
                             str(proposal.id),
                         )
                     elif proposal.proposal_type == 'WORKSHOP':
-                        subject = "SciPy India 2021 - Comment on Your Workshop Proposal"
+                        subject = "SciPy India 2021 - Comment on your Workshop Proposal"
                         message = """
-                            Dear {0}, <br><br>
-                            There is a comment posted on your proposal for the workshop titled <b>{1}</b>.<br>
-                            Once we receive your response, you will be notified regarding further comments/acceptance/ rejection of your talk/workshop via email. 
-                            Log in to view the comments on your submission.<br><br>
-                            Thank You ! <br><br>Regards,<br>SciPy India 2021,<br>FOSSEE - IIT Bombay.
+Dear {0}, \n\n
+There is a comment posted on your proposal for the workshop titled "{1}".\n
+Log in to view the comments on your submission.\n\n
+Thank You ! \n\nRegards,\nSciPy India 2021,\nFOSSEE - IIT Bombay.
                             """.format(
                             proposal.user.first_name,
                             proposal.title,
                             'http://scipy.in/2021/abstract-details/' +
                             str(proposal.id),
                         )
-                    #email = EmailMultiAlternatives(
-                    #    subject, '',
-                    #    sender_email, to,
-                    #    headers={"Content-type": "text/html;charset=iso-8859-1"}
-                    #)
-                    #email.attach_alternative(message, "text/html")
-                    #email.send(fail_silently=True)
+                    email = EmailMultiAlternatives(
+                       subject, '',
+                       sender_email, to,
+                       headers={"Content-type": "text/html;charset=iso-8859-1"}
+                    )
+                    email.attach_alternative(message, "text/html")
+                    email.send(fail_silently=True)
                     proposal.status = "Commented"
                     proposal.save()
                     rates = Ratings.objects.filter(proposal=proposal)
