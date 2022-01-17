@@ -216,6 +216,21 @@ It provides a unique opportunity to discuss about the latest trends on Scientifi
         </div>
     </section>
 
+    {% if tentative_schedule.display_schedule_table %}       
+        {{ tentative_schedule.schedule_table | safe }}
+    {% else %}
+    <section id="schedule" class="section schedule">
+        <div class="container">
+            <div class="row">
+            <h3 class="section-title">Tentative Schedule</h3>
+            <div class="col-md-12">
+                <p><strong>Schedule will be announced soon</strong></p>
+            </div>
+            </div>
+        </div>
+    </section>
+    {% endif %}
+
     <section id="coc" class="section cod">
         <div class="container">
             <div class="row">
